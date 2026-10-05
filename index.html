@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>奶龙大冒险</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <div id="menu" class="overlay active">
+      <h1>奶龙大冒险</h1>
+      <div class="btn" id="startBtn">开始游戏</div>
+      <div class="btn" id="challengeBtn">挑战模式</div>
+      <div class="meta">拖动/指向控制方向，空格或按钮释放吐奶泡</div>
+      <div class="credits">原型扩展 — AI 生成</div>
+    </div>
+
+    <div id="hud" class="overlay hidden">
+      <div id="topBar">
+        <div id="score">分数: 0</div>
+        <div id="level">关卡: 1</div>
+        <div id="target">目标: 100</div>
+      </div>
+      <div id="bottomBar">
+        <div id="energyWrap">
+          <div id="energyBar"></div>
+        </div>
+        <div id="skillWrap">
+          <div id="skillBtn" class="btn small">吐奶泡</div>
+        </div>
+        <div id="pauseBtn" class="btn small">暂停</div>
+      </div>
+    </div>
+
+    <div id="overlayMsg" class="overlay hidden">
+      <div id="msgBox">
+        <h2 id="msgTitle"></h2>
+        <p id="msgText"></p>
+        <div class="btn" id="retryBtn">重玩</div>
+        <div class="btn" id="menuBtn">返回菜单</div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
+
